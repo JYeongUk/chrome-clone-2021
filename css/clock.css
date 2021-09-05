@@ -1,0 +1,17 @@
+.clock div {
+  margin-top: 180px;
+  font-size: 20vh;
+  font-weight: 600;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+}
+
+.clock div span:last-child {
+  font-size: 25px;
+  font-weight: 400;
+}

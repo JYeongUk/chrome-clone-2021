@@ -1,0 +1,74 @@
+.todo {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo label,
+.todo input {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.todo input {
+  font-weight: 400;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-top: 5px;
+}
+
+.todo input:focus {
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+}
+
+.todo input:focus::placeholder {
+  opacity: 0;
+}
+
+.todo input::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: 800;
+  font-style: oblique;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.todo-list {
+  list-style: none;
+  width: 300px;
+}
+
+.todo-list li {
+  padding: 1px 0;
+  font-size: 20px;
+  font-weight: 350;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list li div {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.todo-list li input[type="checkbox"]:checked + div {
+  color: red;
+  text-decoration-line: line-through;
+}
+
+.todo-list li button {
+  background-color: transparent;
+  border: none;
+  font-size: 80%;
+}
+
+.todo-list li button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.login-form,
+.greeting {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  margin-top: 300px;
+}
+
+.login-form label,
+.login-form input {
+  width: 700px;
+  font-size: 400%;
+  text-align: center;
+}
+
+.login-form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.login-form input:focus::placeholder {
+  opacity: 0;
+}
+
+.login-form input::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: 100;
+  font-style: oblique;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.greeting {
+  font-size: 70px;
+  font-weight: 400;
+  cursor: default;
+}
